@@ -32,13 +32,14 @@ body{
 /*main*/
 #main{
 	width: 1280px;
-	min-height: 600px;
+	min-height: 1000px;
 	border: 1px solid #ddd;
 	background: white;	
 	margin: 0 auto;
 }
 .leftmain{
 	width: 800px;
+	min-height: 800px;
 	border: 1px solid #ddd;
 	float: left;
 }
@@ -54,8 +55,11 @@ body{
 }
 .rightmain{ 
 	background: Turquoise;	
+	height: 700px;
+	border: 1px solid #ddd;
 	float: right;
 	margin: 0 auto;
+	display: block;
 }
 .rightmain p{
 	padding: 15px;
