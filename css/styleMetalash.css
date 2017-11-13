@@ -68,14 +68,14 @@ html, body{
 /*banner*/
 .banner {
 		max-width: 100%;
-		max-height: 200px;
+		max-height: 400px;
 		height: 15%;
 		padding-top: 60px; /*		padding-top: 80px;*/
 		margin: 0 auto;
 }
 .banner img{
 	width: 80%;
-	max-width: 1000px;
+	max-width: 400px;
 	max-height: 200px;
 	display: block;
 	margin: 0 auto;
@@ -92,7 +92,7 @@ html, body{
 	width: 100%;
 	height: 90%;
 	float: left;
-	margin-top: 30px;
+	margin-top: 80px;
 	background: white;
 }
 .leftmain{
@@ -122,6 +122,14 @@ html, body{
 	text-align: left;
 	float: left;
 }
+#aboutMetalash{
+	visibility: visible;
+	position: absolute;
+}
+#Story{
+	visibility: hidden;
+		position: absolute;
+}
 .rightmain{
 	/*background: Turquoise;*/
 	min-width: 30%;
@@ -130,12 +138,15 @@ html, body{
 	margin: 0 auto;
 	display: block;
 }
+.rightmain button{
+	width: 120px;
+	height: 40px;
+	background: #4DFF7F;
+	color: black;
+}
 .rightmain p{
 	padding: 15px;
 	color: black;
-}
-.twitterMain {
-	padding: 15px;
 }
 .footerContainer{
 	width: 100%;

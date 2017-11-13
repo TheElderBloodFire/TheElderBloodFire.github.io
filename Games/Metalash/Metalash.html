@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheElderBloodFire </title>
+<link rel="stylesheet" href="../../css/styleMetalash.css" />
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="container">
+			<!-- Header -->
+			<div class="header">
+				<div class="menu">
+					<ul>
+						<li><a href="/">TheElderBloodFire</a></li>
+						<li><a href="../../AtakanAtes">Atakan Ateş</a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="banner">
+			<a href="../../index.html"><img alt="Banner" src="../../img/Metalash.jpeg"></a>
+		</div>
+		<!-- Main -->
+		<div id="main">
+			<div class="leftrightContainer">
+				<!-- Left Main -->
+				<div class="leftmain" id="leftmain">
+					<div class="aboutMetalash" id="aboutMetalash">
+						<h2>Metalash</h2>
+						<p>
+						<br>This game created by Atakan Ateş.
+						<br>Shared under the name of TheElderBloodFire.
+						<br>
+						<br>Unity, Blender, Krita, LMMS, Audacity were used in making the game.
+						<br>It is the product of a single person's long-term work.
+						<br>©2017 Atakan ATEŞ
+						<br>
+						<br>Look game.
+						</p>
+						<br><h3><a href="Privacy_Policy_Metalash.html">Privacy Policy</a></h3>
+					</div>
+					<div class="Story" id="Story">
+						<h2>___Awake___</h2>
+						<p>
+							<br>Scientists have developed a new alloy.
+							<br>This alloy can change its shape when electricity is supplied in low quantities.
+							<br>In addition, this alloy can move.
+							<br>Scientists placed a chip inside this alloy and have succeeded in giving that alloy an identity.
+							<br>They gave a name… Metalash…
+							<br>A low-level artificial intelligence was added to Metalash.
+							<br>Metalash is not as advanced as robots, so they put it behind bars(Prison).
+							<br>Earthquake...
+							<br>A Metalash has a wake up to the earthquake.
+							<br>Metalash's control is now yours...</p>
+					</div>
+				</div>
+				<!--Right Main-->
+				<div class="rightmain" id="rightmain">
+					<button type="button" name="showStory" onclick="ToStory();">Story</button>
+					<button type="button" name="showStory" onclick="FromStory();">About Metalash</button>
+				</div>
+
+			</div>
+			<div class="footerContainer">
+				<!-- Footer -->
+				<div id="footer">
+					<h4>All Rights Reserved. &copy; 2017 Atakan ATEŞ.</h4>
+				</div>
+			</div>
+		<script type="text/javascript">
+		function ToStory() {
+			document.getElementById("aboutMetalash").setAttribute('style','visibility:hidden');
+			document.getElementById("Story").setAttribute('style','visibility:visible');
+		}
+		function FromStory() {
+			document.getElementById("Story").setAttribute('style','visibility:hidden');
+			document.getElementById("aboutMetalash").setAttribute('style','visibility:visible');
+		}
+
+		</script>
+		</div>
+
+	</div>
+
+	</div>
+</body>
+</html>
