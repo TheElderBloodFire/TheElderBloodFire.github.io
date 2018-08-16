@@ -29,19 +29,16 @@ function ChangeLanguage() {
 
 function ChangeiframeLanguage() {
   if (document.getElementById("WorkViewer")) {
-    document.getElementById("WorkViewer").contentWindow.ChangeLanguage();    
+    document.getElementById("WorkViewer").contentWindow.ChangeLanguage();
   }
 }
 
 function StartLanguage() {
   var localLang = navigator.language || navigator.userLanguage;
   if (localLang == "tr-TR") {
-    if (currentLang == "en") {
-      currentLang = "tr";
-      SelectLanguage(currentLang);
-    }else {
-      currentLang = "en";
-      SelectLanguage(currentLang);
-    }
+    currentLang = "tr";
+  }else {
+    currentLang = "en";
   }
+  SelectLanguage(currentLang);
 }
