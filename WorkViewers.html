@@ -7,13 +7,10 @@
   </head>
   <body>
     <div class="WorkContent" name="Work">
-      <iframe src="Games/Metalash/WorkViewer.html"></iframe>
+      <iframe name="Works" src="Games/Metalash/WorkViewer.html"></iframe>
     </div>
-    <!-- <div class="WorkContentInActive" name="Work">
-      <iframe src="Games/Metalash/WorkViewer1.html"></iframe>
-    </div> -->
     <div class="WorkContentInActive" name="Work">
-      <iframe src="Artworks/WorkViewers/ArtWorkViewer.html"></iframe>
+      <iframe name="Works" src="Artworks/WorkViewers/ArtWorkViewer.html"></iframe>
     </div>
 
     <div class="WorkViewerButtons CenterText">
@@ -38,8 +35,15 @@
       //console.log(contents);
       //console.log(contents.length);
       contents[currentContent].className = "WorkContentInActive";
-      currentContent = (currentContent + 1)%contents.length;
+      currentContent = (currentContent + 1) % contents.length;
       contents[currentContent].className = "WorkContent";
+    }
+
+    function ChangeLanguage() {
+      var works = document.getElementsByName("Works");
+      for (var i = 0; i < works.length; i++) {
+        works[i].contentWindow.ChangeLanguage();
+      }
     }
   </script>
 </html>

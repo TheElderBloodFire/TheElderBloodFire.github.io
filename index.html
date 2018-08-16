@@ -15,19 +15,23 @@
 				<div class="HeaderElement ContainerInside CenterText">
 					<span id="Menu" class="Dropdown">&#9776;
 						<div class="DropdownContent">
-							<!-- <a href="Games/Games.html">
-								<div>Games</div>
-							</a> -->
 							<a href="/Games/Games">
-								<div>Games</div>
+								<div name="lang" lang="en">
+									<div>Games</div>
+								</div>
+								<div name="lang" lang="tr">
+									<div>Oyunlar</div>
+								</div>
 							</a>
-							<!-- <a href="Artworks/Artworks.html">
-								<div>Artworks</div>
-							</a> -->
 							<a href="/Artworks/Artworks">
-								<div>Artworks</div>
+								<div name="lang" lang="en">
+									<div>Artworks</div>
+								</div>
+								<div name="lang" lang="tr">
+									<div>Sanatsal Çalışmalar</div>
+								</div>
 							</a>
-							<a href="#TR" onclick="/*alert('Türkçe daha oluşturulmadı!');*/">
+							<a href="#MainText" onclick="ChangeLanguage();">
 								<div>TR/EN</div>
 							</a>
 						</div>
@@ -37,9 +41,6 @@
 					<ul id="HeaderList" class="ContainerInside">
 						<li>
 							<div class="HeaderElement ContainerInside CenterText">
-								<!-- <a href="index.html">
-									<span>TheElderBloodFire</span>
-								</a> -->
 								<a href="/">
 									<span>TheElderBloodFire</span>
 								</a>
@@ -47,9 +48,6 @@
 						</li>
 						<li>
 							<div class="HeaderElement ContainerInside CenterText">
-								<!-- <a href="AtakanAtes.html">
-									<span>Atakan Ateş</span>
-								</a> -->
 								<a href="/AtakanAtes">
 									<span>Atakan Ateş</span>
 								</a>
@@ -61,56 +59,58 @@
 		<!-- Banner -->
 		<div class="Banner">
 			<div class="BannerInside">
-				<!-- <a href="index.html"><img alt="Banner" src="img/TheElderBloodFireWebSite.jpg"></a> -->
 				<a href="/"><img alt="Banner" src="/img/TheElderBloodFireWebSite.jpg"></a>
 			</div>
 		</div>
 		<!-- Main -->
-		<div class="MainText">
+		<div id="MainText" class="MainText">
 			<div class="MainTextInside StoryPart">
-				<h1 id="EN">English</h1>
-				<h2>TheElderBloodFire</h2>
-				<p>TheElderBloodFire is a ancient book. This book written with blood, can read only fire.</p>
-				<p>One day, a child burns this book and the book begins to whisper the legend.</p>
-				<p>"Old clotted blood and A fire that does not fade..."</p>
-				<p>A small, turquoise dragon sleeping in a blood clot.</p>
-				<p>We will follow TheElderBloodFire's story.</p>
+				<div name="lang" lang="en">
+					<h2>TheElderBloodFire</h2>
+					<p>TheElderBloodFire is a ancient book. This book written with blood, can read only fire.</p>
+					<p>One day, a child burns this book and the book begins to whisper the legend.</p>
+					<p>"Old clotted blood and A fire that does not fade..."</p>
+					<p>A small, turquoise dragon sleeping in a blood clot.</p>
+					<p>We will follow TheElderBloodFire's story.</p>
 
+					<p>
+						<br>
+						<br>
+						<br>
+						<br>
+						The web page will be updated as the story grows.
+					</p>
+				</div>
 
+				<div name="lang" lang="tr">
+					<h2>Ulu Kan Ateşi</h2>
 
-				<p></p>
-				<h1 id="TR">Türkçe</h1>
-				<h2>Ulu Kan Ateşi</h2>
-
-				<p>Ulu Kan Ateşi(The Elder Blood Fire)</p>
-				<p>Eski zamanlardan kalma bir kitap… Bu kitap kan ile yazılmış, ateş ile okunurmuş.</p>
-				<p>Bu kitabın yakılmasından doğacak sonucun, tam ne olduğu belirsizken, ateş ile oynayan bir çocuk bunu yakmış
-				ve efsane fısıldamaya başlamış…</p>
-				<p>Ulu Kan Ateşi(TheElderBloodFire) şimdi, eski efsanelerden kalma bir köz. Bu közün yıllardır yanmayı sürdürdüğü ve asla sönmeyeceği
-				söylenilir. Ve denilir ki:</p>
-				<p>"Geçmişten kalma bir kan pıhtısı ve sönmek bilmeyen bir ateş…" bu, sürekli yanan o kağıdın üzerinde yazan
-				sözlerdir...</p>
-				<p>Bunun hakkında öyküler efsaneler yazılmış. "Yanan Kan" gibi isimler söylenmiş olsa da halk arasında
-				Ulu Kan Ateşi(TheElderBloodFire) olarak tanınır olmuş.</p>
-				<p>Küçük, gök (Turkuaz) rengi bir ejder kuyruğunu yanına almış ve uyuyor ama bu kan pıhtısının içinde ne arıyor.</p>
-				<p>Ve bu pıhtı yanıyor. Bu yanan ateşe "Ulu Kan Ateşi"(ElderBloodFire) deniyor.</p>
-				<p>Bu kan parçasından başka yerlerde de vardır belki, ama biz herkesin bildiği o efsane Ulu Kan Ateşi'nin(TheElderBloodFire'ın) izini süreceğiz...</p>
-
-				<p>
-				<br>
-				<br>
-				<br>
-				The web page will be updated as the story grows.
-				<br>
-				Öykü büyüdükçe web sayfası güncellenecektir.
-				</p>
+					<p>Ulu Kan Ateşi(The Elder Blood Fire)</p>
+					<p>Eski zamanlardan kalma bir kitap… Bu kitap kan ile yazılmış, ateş ile okunurmuş.</p>
+					<p>Bu kitabın yakılmasından doğacak sonucun, tam ne olduğu belirsizken, ateş ile oynayan bir çocuk bunu yakmış
+					ve efsane fısıldamaya başlamış…</p>
+					<p>Ulu Kan Ateşi(TheElderBloodFire) şimdi, eski efsanelerden kalma bir köz. Bu közün yıllardır yanmayı sürdürdüğü ve asla sönmeyeceği
+					söylenilir. Ve denilir ki:</p>
+					<p>"Geçmişten kalma bir kan pıhtısı ve sönmek bilmeyen bir ateş…" bu, sürekli yanan o kağıdın üzerinde yazan
+					sözlerdir...</p>
+					<p>Bunun hakkında öyküler efsaneler yazılmış. "Yanan Kan" gibi isimler söylenmiş olsa da halk arasında
+					Ulu Kan Ateşi(TheElderBloodFire) olarak tanınır olmuş.</p>
+					<p>Küçük, gök (Turkuaz) rengi bir ejder kuyruğunu yanına almış ve uyuyor ama bu kan pıhtısının içinde ne arıyor.</p>
+					<p>Ve bu pıhtı yanıyor. Bu yanan ateşe "Ulu Kan Ateşi"(ElderBloodFire) deniyor.</p>
+					<p>Bu kan parçasından başka yerlerde de vardır belki, ama biz herkesin bildiği o efsane Ulu Kan Ateşi'nin(TheElderBloodFire'ın) izini süreceğiz...</p>
+					<p>
+					<br>
+					<br>
+					Öykü büyüdükçe web sayfası güncellenecektir.
+					</p>
+				</div>
 			</div>
 		</div>
 		<!-- Work Viewer -->
 		<div class="WorkViewer">
 			<div class="WorkViewerInside">
 				<div class="WorkContents">
-					<iframe src="WorkViewers.html" width="100%" height="100%" style="border:none;"></iframe>
+					<iframe id="WorkViewer" src="WorkViewers.html" width="100%" height="100%" style="border:none;"></iframe>
 				</div>
 			</div>
 		</div>
@@ -118,18 +118,38 @@
 		<div class="Contact">
 			<div class="ContactInside">
 				<div class="ContactMain">
-					<h2>Contact</h2>
-					<p>
-						TheElderBloodFire
-					</p>
-					<p>
-						<br>See my
-						<a href="https://twitter.com/ElderBloodFire" class="LinkText">Twitter</a>
-						,
-						<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">Instagram</a>
-						.
-					</p>
-					<h4>Create dreams with Game Development...</h4>
+					<div name="lang" lang="en">
+						<h2>Contact</h2>
+						<p>
+							TheElderBloodFire
+						</p>
+						<p>
+							<br><h4>See my pages:</h4>
+							<a href="https://twitter.com/ElderBloodFire" class="LinkText">
+								<img width="40px" height="40px" src="/img/Twitter_Logo.png" alt="Twitter Logo">
+							</a>
+							<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">
+								<img width="40px" height="40px" src="/img/Instagram_Logo.png" alt="Twitter Logo">
+							</a>
+						</p>
+						<h4>Create dreams with Game...</h4>
+					</div>
+					<div name="lang" lang="tr">
+						<h2>İletişim</h2>
+						<p>
+							TheElderBloodFire
+						</p>
+						<p>
+							<br><h4>Sayfalarıma bakın:</h4>
+							<a href="https://twitter.com/ElderBloodFire" class="LinkText">
+								<img width="40px" height="40px" src="/img/Twitter_Logo.png" alt="Twitter Logo">
+							</a>
+							<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">
+								<img width="40px" height="40px" src="/img/Instagram_Logo.png" alt="Twitter Logo">
+							</a>
+						</p>
+						<h4>Oyun ile hayallerinizi yaratın.</h4>
+					</div>
 				</div>
 				<div class="TwitterMain">
 					<a class="twitter-timeline"
@@ -146,11 +166,17 @@
 		<!-- Footer -->
 		<div class="Footer">
 			<div class="FooterInside">
-				<h4>All Rights Reserved. &copy; 2017-2018 Atakan ATEŞ.</h4>
+				<div name="lang" lang="en">
+					<h4>All Rights Reserved. &copy; 2017-2018 Atakan ATEŞ.</h4>
+				</div>
+				<div name="lang" lang="tr">
+					<h4>Tüm hakları saklıdır. &copy; 2017-2018 Atakan ATEŞ.</h4>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	</div>
+	<script type="text/javascript"  src="/js/LanguageChanger.js"></script>
 </body>
 </html>

@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--When Added a icon favicon <link rel="shortcut icon" href="/path/to/icons/favicon.ico">-->
 <link rel="shortcut icon" href="/img/FaviconPixel.png">
 <title>Atakan ATEŞ </title>
 <link rel="stylesheet" href="css/style.css" />
@@ -16,19 +15,23 @@
 				<div class="HeaderElement ContainerInside CenterText">
 					<span id="Menu" class="Dropdown">&#9776;
 						<div class="DropdownContent">
-							<!-- <a href="Games/Games.html">
-								<div>Games</div>
-							</a> -->
 							<a href="/Games/Games">
-								<div>Games</div>
+								<div name="lang" lang="en">
+									<div>Games</div>
+								</div>
+								<div name="lang" lang="tr">
+									<div>Oyunlar</div>
+								</div>
 							</a>
-							<!-- <a href="Artworks/Artworks.html">
-								<div>Artworks</div>
-							</a> -->
 							<a href="/Artworks/Artworks">
-								<div>Artworks</div>
+								<div name="lang" lang="en">
+									<div>Artworks</div>
+								</div>
+								<div name="lang" lang="tr">
+									<div>Sanatsal Çalışmalar</div>
+								</div>
 							</a>
-							<a href="#TR" onclick="/*alert('Türkçe daha oluşturulmadı!');*/">
+							<a href="#MainText" onclick="ChangeLanguage();">
 								<div>TR/EN</div>
 							</a>
 						</div>
@@ -38,9 +41,6 @@
 					<ul id="HeaderList" class="ContainerInside">
 						<li>
 							<div class="HeaderElement ContainerInside CenterText">
-								<!-- <a href="index.html">
-									<span>TheElderBloodFire</span>
-								</a> -->
 								<a href="/">
 									<span>TheElderBloodFire</span>
 								</a>
@@ -48,9 +48,6 @@
 						</li>
 						<li>
 							<div class="HeaderElement ContainerInside CenterText">
-								<!-- <a href="AtakanAtes.html">
-									<span>Atakan Ateş</span>
-								</a> -->
 								<a href="/AtakanAtes">
 									<span>Atakan Ateş</span>
 								</a>
@@ -66,40 +63,40 @@
 			</div>
 		</div>
 		<!-- Main -->
-		<div class="MainText">
+		<div id="MainText" class="MainText">
 			<div class="MainTextInside StoryPart">
-				<h1 id="EN">English</h1>
-				<h2>I think...</h2>
-				<p>Game development is art, model, animation, music and fun...</p>
-				<p>But in the same time Business planning, Project management, time control etc.</p>
+				<div name="lang" lang="en">
+					<h2>I think...</h2>
+					<p>Game development is art, model, animation, music and fun...</p>
+					<p>But in the same time Business planning, Project management, time control etc.</p>
 
-				<h2>About Me!</h2>
-				<p>Hey, I am Atakan Ateş.</p>
-				<p>I am a Computer Engineering student.</p>
-				<p>You found my artworks under TheElderBloodFire.</p>
-				<p>Now find some software.</p>
-				<p><a href="https://github.com/AtakanFire">Visit My Github Page!</a></p>
+					<h2>About Me!</h2>
+					<p>Hey, I am Atakan Ateş.</p>
+					<p>I am a Computer Engineering student.</p>
+					<p>You found my artworks under TheElderBloodFire.</p>
+					<p>Now find some software.</p>
+					<p><a href="https://github.com/AtakanFire">Visit My Github Page!</a></p>
+				</div>
 
-				<h1 id="TR">Türkçe</h1>
-				<h2>Bence...</h2>
-				<p>Oyun yaratmak ve geliştirmek sanat, boyutlama, tasarım, canlandırma, müzik ve eğlence...</p>
-				<p>Ama aynı zamanda İş Tasarımı ve Yönetimi, Zaman denetimi vb. pek çok yapı...</p>
+				<div name="lang" lang="tr">
+					<h2>Bence...</h2>
+					<p>Oyun yaratmak ve geliştirmek sanat, boyutlama, tasarım, canlandırma, müzik ve eğlence...</p>
+					<p>Ama aynı zamanda İş Tasarımı ve Yönetimi, Zaman denetimi vb. pek çok yapı...</p>
 
-				<h2>Hakkımda!</h2>
-				<p>Merhabalar, Ben Atakan Ateş.</p>
-				<p>Bilgisayar Mühendisliği öğrencisiyim.</p>
-				<p>TheElderBloodFire adı altında oyun ve sanat çalışmalarımı gördünüz.</p>
-				<p>Geliştirdiğim yazılımları incelemek istermisiniz?</p>
-				<p><a href="https://github.com/AtakanFire">Github Sayfama bir uğrayın!</a></p>
-
-
+					<h2>Hakkımda!</h2>
+					<p>Merhabalar, Ben Atakan Ateş.</p>
+					<p>Bilgisayar Mühendisliği öğrencisiyim.</p>
+					<p>TheElderBloodFire adı altında oyun ve sanat çalışmalarımı gördünüz.</p>
+					<p>Geliştirdiğim yazılımları incelemek istermisiniz?</p>
+					<p><a href="https://github.com/AtakanFire">Github Sayfama bir uğrayın!</a></p>
+				</div>
 			</div>
 		</div>
 		<!-- Work Viewer -->
 		<div class="WorkViewer">
 			<div class="WorkViewerInside">
 				<div class="WorkContents">
-					<iframe src="WorkViewers.html" width="100%" height="100%" style="border:none;"></iframe>
+					<iframe id="WorkViewer" src="WorkViewers.html" width="100%" height="100%" style="border:none;"></iframe>
 				</div>
 
 			</div>
@@ -108,28 +105,37 @@
 		<div class="Contact">
 			<div class="ContactInside">
 				<div class="ContactMain">
+					<div name="lang" lang="en">
 					<h2>Contact</h2>
 					<a href="https://github.com/AtakanFire" class="LinkText">Visit My Github Page!</a>
+					</div>
+					<div name="lang" lang="tr">
+						<h2>İletişim</h2>
+						<a href="https://github.com/AtakanFire" class="LinkText">Github Sayfama bakın.</a>
+					</div>
 				</div>
-				<!-- <div class="TwitterMain">
-					<a class="twitter-timeline"
-					href="https://twitter.com/ElderBloodFire"
-					data-height="300"
-					data-width="280"
-					data-chrome="noscrollbar">
-					Tweets by ElderBloodFire</a>
-					<script async src="//platform.twitter.com/widgets.js"
-					charset="utf-8"></script>
-				</div> -->
 			</div>
 		</div>
 		<!-- Footer -->
 		<div class="Footer">
 			<div class="FooterInside">
-				<h4>All Rights Reserved. &copy; 2017-2018 Atakan ATEŞ.</h4>
+				<div name="lang" lang="en">
+					<h4>All Rights Reserved. &copy; 2017-2018 Atakan ATEŞ.</h4>
+				</div>
+				<div name="lang" lang="tr">
+					<h4>Tüm hakları saklıdır. &copy; 2017-2018 Atakan ATEŞ.</h4>
+				</div>
 			</div>
 		</div>
 		</div>
 	</div>
+	<script type="text/javascript"  src="/js/LanguageChanger.js"></script>
 </body>
 </html>
+
+<!--
+<div name="lang" lang="en">
+</div>
+<div name="lang" lang="tr">
+</div>
+-->

@@ -15,19 +15,23 @@
 				<div class="HeaderElement ContainerInside CenterText">
 					<span id="Menu" class="Dropdown">&#9776;
 						<div class="DropdownContent">
-							<!-- <a href="Games/Games.html">
-								<div>Games</div>
-							</a> -->
 							<a href="/Games/Games">
-								<div>Games</div>
+								<div name="lang" lang="en">
+									<div>Games</div>
+								</div>
+								<div name="lang" lang="tr">
+									<div>Oyunlar</div>
+								</div>
 							</a>
-							<!-- <a href="Artworks/Artworks.html">
-								<div>Artworks</div>
-							</a> -->
 							<a href="/Artworks/Artworks">
-								<div>Artworks</div>
+								<div name="lang" lang="en">
+									<div>Artworks</div>
+								</div>
+								<div name="lang" lang="tr">
+									<div>Sanatsal Çalışmalar</div>
+								</div>
 							</a>
-							<a href="#TR" onclick="/*alert('Türkçe daha oluşturulmadı!');*/">
+							<a href="#MainText" onclick="ChangeLanguage();">
 								<div>TR/EN</div>
 							</a>
 						</div>
@@ -37,9 +41,6 @@
 					<ul id="HeaderList" class="ContainerInside">
 						<li>
 							<div class="HeaderElement ContainerInside CenterText">
-								<!-- <a href="index.html">
-									<span>TheElderBloodFire</span>
-								</a> -->
 								<a href="/">
 									<span>TheElderBloodFire</span>
 								</a>
@@ -47,9 +48,6 @@
 						</li>
 						<li>
 							<div class="HeaderElement ContainerInside CenterText">
-								<!-- <a href="AtakanAtes.html">
-									<span>Atakan Ateş</span>
-								</a> -->
 								<a href="/AtakanAtes">
 									<span>Atakan Ateş</span>
 								</a>
@@ -67,51 +65,59 @@
 		<!-- Main -->
 		<div class="MainText">
 			<div class="MainTextInside StoryPart">
-				<h2>Artworks</h2>
-				<div class="MainTextImage">
-					<div class="MainTextImageInside">
-						<iframe src="WorkViewers/ArtworksDesign.html" class="MainText" width="100%" style="border:none;"></iframe>
+
+				<div name="lang" lang="en">
+					<h2>Artworks</h2>
+					<div class="MainTextImage">
+						<div class="MainTextImageInside">
+							<iframe src="WorkViewers/ArtworksDesign.html" class="MainText" width="100%" style="border:none;"></iframe>
+						</div>
 					</div>
+					<h2>Artworks</h2>
+
+					<p>I share my artworks under the name of TheElderBloodFire.</p>
+					<p>Drawing, 3D modelling, design, etc. for Game Creation.</p>
+					<p>
+						<br>See my
+						<a href="https://twitter.com/ElderBloodFire">Twitter</a>
+						,
+						<a href="https://www.instagram.com/TheElderBloodFire">Instagram</a>
+						.
+					</p>
+					<br>
+					<br>
+					<h3>Dreams create art. Art creates your universe.</h3>
 				</div>
-				<h1 id="EN">English</h1>
-				<h2>Artworks</h2>
 
-				<p>I share my artworks under the name of TheElderBloodFire.</p>
-				<p>Drawing, 3D modelling, design, etc. for Game Creation.</p>
-				<p>
-					<br>See my
-					<a href="https://twitter.com/ElderBloodFire">Twitter</a>
-					,
-					<a href="https://www.instagram.com/TheElderBloodFire">Instagram</a>
-					.
-				</p>
+				<div name="lang" lang="tr">
+					<h2>Sanatsal Çalışmalarım</h2>
+					<div class="MainTextImage">
+						<div class="MainTextImageInside">
+							<iframe src="WorkViewers/ArtworksDesign.html" class="MainText" width="100%" style="border:none;"></iframe>
+						</div>
+					</div>
+					<h2>Sanatsal Çalışmalarım</h2>
+					<p>Sanatsal çalışmalarımı TheElderBloodFire adı altında paylaşıyorum.</p>
+					<p></p>
+					<p>
+						<br>Gözatın:
+						<a href="https://twitter.com/ElderBloodFire">Twitter</a>
+						,
+						<a href="https://www.instagram.com/TheElderBloodFire">Instagram</a>
+						.
+					</p>
 
-
-
-				<h1 id="TR">Türkçe</h1>
-				<h2>Sanatsal Çalışmalarım</h2>
-				<p>Sanatsal çalışmalarımı TheElderBloodFire adı altında paylaşıyorum.</p>
-				<p></p>
-				<p>
-					<br>Gözatın:
-					<a href="https://twitter.com/ElderBloodFire">Twitter</a>
-					,
-					<a href="https://www.instagram.com/TheElderBloodFire">Instagram</a>
-					.
-				</p>
-
-
-				<p></p>
-
-				<h3>Dreams create art. Art creates your universe.</h3>
-				<h3>Düşleriniz sanatı, sanat ise evrenininizi yaratsın...</h3>
+					<br>
+					<br>
+					<h3>Düşleriniz sanatı, sanat ise evrenininizi yaratsın...</h3>
+				</div>
 			</div>
 		</div>
 		<!-- Work Viewer -->
 		<div class="WorkViewer">
 			<div class="WorkViewerInside">
 				<div class="WorkContents">
-					<iframe src="../WorkViewers.html" width="100%" height="100%" style="border:none;"></iframe>
+					<iframe id="WorkViewer" src="../WorkViewers.html" width="100%" height="100%" style="border:none;"></iframe>
 				</div>
 			</div>
 		</div>
@@ -119,18 +125,38 @@
 		<div class="Contact">
 			<div class="ContactInside">
 				<div class="ContactMain">
-					<h2>Contact</h2>
-					<p>
-						TheElderBloodFire
-					</p>
-					<p>
-						<br>See my
-						<a href="https://twitter.com/ElderBloodFire" class="LinkText">Twitter</a>
-						,
-						<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">Instagram</a>
-						.
-					</p>
-					<h4>Create dreams with Game Development...</h4>
+					<div name="lang" lang="en">
+						<h2>Contact</h2>
+						<p>
+							TheElderBloodFire
+						</p>
+						<p>
+							<br><h4>See my pages:</h4>
+							<a href="https://twitter.com/ElderBloodFire" class="LinkText">
+								<img width="40px" height="40px" src="/img/Twitter_Logo.png" alt="Twitter Logo">
+							</a>
+							<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">
+								<img width="40px" height="40px" src="/img/Instagram_Logo.png" alt="Twitter Logo">
+							</a>
+						</p>
+						<h4>Create dreams with Game...</h4>
+					</div>
+					<div name="lang" lang="tr">
+						<h2>İletişim</h2>
+						<p>
+							TheElderBloodFire
+						</p>
+						<p>
+							<br><h4>Sayfalarıma bakın:</h4>
+							<a href="https://twitter.com/ElderBloodFire" class="LinkText">
+								<img width="40px" height="40px" src="/img/Twitter_Logo.png" alt="Twitter Logo">
+							</a>
+							<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">
+								<img width="40px" height="40px" src="/img/Instagram_Logo.png" alt="Twitter Logo">
+							</a>
+						</p>
+						<h4>Oyun ile hayallerinizi yaratın.</h4>
+					</div>
 				</div>
 				<div class="TwitterMain">
 					<a class="twitter-timeline"
@@ -150,11 +176,16 @@
 		<!-- Footer -->
 		<div class="Footer">
 			<div class="FooterInside">
-				<h4>All Rights Reserved. &copy; 2017-2018 Atakan ATEŞ.</h4>
+				<div name="lang" lang="en">
+					<h4>All Rights Reserved. &copy; 2017-2018 Atakan ATEŞ.</h4>
+				</div>
+				<div name="lang" lang="tr">
+					<h4>Tüm hakları saklıdır. &copy; 2017-2018 Atakan ATEŞ.</h4>
+				</div>
 			</div>
 		</div>
 	</div>
-
 	</div>
+	<script type="text/javascript"  src="/js/LanguageChanger.js"></script>
 </body>
 </html>
