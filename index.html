@@ -1,182 +1,272 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="/img/FaviconPixel.png">
-<title>TheElderBloodFire </title>
-<link rel="stylesheet" href="/css/style.css" />
-</head>
-<body>
-	<div id="MainContainer" class="ContainerOut">
-		<div id="MainContainerInside" class="ContainerInside">
-			<!-- Header -->
-			<div id="Header">
-				<div class="HeaderElement ContainerInside CenterText">
-					<span id="Menu" class="Dropdown">&#9776;
-						<div class="DropdownContent">
-							<a href="/Games/Games">
-								<div name="lang" lang="en">
-									<div>Games</div>
-								</div>
-								<div name="lang" lang="tr">
-									<div>Oyunlar</div>
-								</div>
-							</a>
-							<a href="/Artworks/Artworks">
-								<div name="lang" lang="en">
-									<div>Artworks</div>
-								</div>
-								<div name="lang" lang="tr">
-									<div>Sanatsal Çalışmalar</div>
-								</div>
-							</a>
-							<a href="#MainText" onclick="ChangeLanguage();">
-								<div>TR/EN</div>
-							</a>
-						</div>
-					</span>
-				</div>
-				<nav id="HeadNav" class="ContainerInside">
-					<ul id="HeaderList" class="ContainerInside">
-						<li>
-							<div class="HeaderElement ContainerInside CenterText">
-								<a href="/">
-									<span>TheElderBloodFire</span>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="HeaderElement ContainerInside CenterText">
-								<a href="/AtakanAtes">
-									<span>Atakan Ateş</span>
-								</a>
-							</div>
-						</li>
-					</ul>
-			</nav>
-		</div>
-		<!-- Banner -->
-		<div class="Banner">
-			<div class="BannerInside">
-				<a href="/"><img alt="Banner" src="/img/TheElderBloodFireWebSite.jpg"></a>
-			</div>
-		</div>
-		<!-- Main -->
-		<div id="MainText" class="MainText">
-			<div class="MainTextInside StoryPart">
-				<div name="lang" lang="en">
-					<h2>TheElderBloodFire</h2>
-					<p>TheElderBloodFire is a ancient book. This book written with blood, can read only fire.</p>
-					<p>One day, a child burns this book and the book begins to whisper the legend.</p>
-					<p>"Old clotted blood and A fire that does not fade..."</p>
-					<p>A small, turquoise dragon sleeping in a blood clot.</p>
-					<p>We will follow TheElderBloodFire's story.</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/FaviconPixel.png">
+    <title>TheElderBloodFire</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Top-Nav -->
+    <nav id="top-nav" class="d-flex justify-content-center">
+      <div id="nav-top" class="d-flex justify-content-center nav-top">
+        <h3 id="nav-text" class="nav-text" name="lang" data-lang="TheElderBloodFire">TheElderBloodFire</h3>
+        <!-- ☰ TheElderBloodFire  -->
+      </div>
+    </nav>
 
-					<p>
-						<br>
-						<br>
-						<br>
-						<br>
-						The web page will be updated as the story grows.
-					</p>
-				</div>
+    <nav id="flag-nav" class="d-flex justify-content-center">
+      <a id="tr" class="btn btn-social btn-instagram rounded nav-flag" onclick="changeLanguage('tr');">
+          <span class="flag">🇹🇷 <span name="lang" data-lang="Turkish" style="display:none;">Turkish</span></span>
+        </a>
+        <a id="en" class="btn btn-social rounded nav-flag" onclick="changeLanguage('en');">
+          <span class="flag">🇬🇧/🇺🇸 <span name="lang" data-lang="English" style="display:none;">English</span></span>
+        </a>
+    </nav>
 
-				<div name="lang" lang="tr">
-					<h2>Ulu Kan Ateşi</h2>
+    <!-- Bot-Nav -->
+    <nav id="bot-nav" class="d-flex justify-content-center">
+      <div id="nav-bot" class="d-flex justify-content-center nav-bot nav-text">
+          <img class="nav-text" src="/img/FaviconPixel.png" alt="ToTop">
+      </div>
+    </nav>
 
-					<p>Ulu Kan Ateşi(The Elder Blood Fire)</p>
-					<p>Eski zamanlardan kalma bir kitap… Bu kitap kan ile yazılmış, ateş ile okunurmuş.</p>
-					<p>Bu kitabın yakılmasından doğacak sonucun, tam ne olduğu belirsizken, ateş ile oynayan bir çocuk bunu yakmış
-					ve efsane fısıldamaya başlamış…</p>
-					<p>Ulu Kan Ateşi(TheElderBloodFire) şimdi, eski efsanelerden kalma bir köz. Bu közün yıllardır yanmayı sürdürdüğü ve asla sönmeyeceği
-					söylenilir. Ve denilir ki:</p>
-					<p>"Geçmişten kalma bir kan pıhtısı ve sönmek bilmeyen bir ateş…" bu, sürekli yanan o kağıdın üzerinde yazan
-					sözlerdir...</p>
-					<p>Bunun hakkında öyküler efsaneler yazılmış. "Yanan Kan" gibi isimler söylenmiş olsa da halk arasında
-					Ulu Kan Ateşi(TheElderBloodFire) olarak tanınır olmuş.</p>
-					<p>Küçük, gök (Turkuaz) rengi bir ejder kuyruğunu yanına almış ve uyuyor ama bu kan pıhtısının içinde ne arıyor.</p>
-					<p>Ve bu pıhtı yanıyor. Bu yanan ateşe "Ulu Kan Ateşi"(ElderBloodFire) deniyor.</p>
-					<p>Bu kan parçasından başka yerlerde de vardır belki, ama biz herkesin bildiği o efsane Ulu Kan Ateşi'nin(TheElderBloodFire'ın) izini süreceğiz...</p>
-					<p>
-					<br>
-					<br>
-					Öykü büyüdükçe web sayfası güncellenecektir.
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- Work Viewer -->
-		<div class="WorkViewer">
-			<div class="WorkViewerInside">
-				<div class="WorkContents">
-					<iframe id="WorkViewer" src="WorkViewers.html" width="100%" height="100%" style="border:none;"></iframe>
-				</div>
-			</div>
-		</div>
-		<!-- Contact -->
-		<div class="Contact">
-			<div class="ContactInside">
-				<div class="ContactMain">
-					<div name="lang" lang="en">
-						<h2>Contact</h2>
-						<p>
-							TheElderBloodFire
-						</p>
-						<p>
-							<br><h4>See my pages:</h4>
-							<a href="https://twitter.com/ElderBloodFire" class="LinkText">
-								<img width="40px" height="40px" src="/img/Twitter_Logo.png" alt="Twitter Logo">
-							</a>
-							<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">
-								<img width="40px" height="40px" src="/img/Instagram_Logo.png" alt="Twitter Logo">
-							</a>
-						</p>
-						<h4>Create dreams with Game...</h4>
-					</div>
-					<div name="lang" lang="tr">
-						<h2>İletişim</h2>
-						<p>
-							TheElderBloodFire
-						</p>
-						<p>
-							<br><h4>Sayfalarıma bakın:</h4>
-							<a href="https://twitter.com/ElderBloodFire" class="LinkText">
-								<img width="40px" height="40px" src="/img/Twitter_Logo.png" alt="Twitter Logo">
-							</a>
-							<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">
-								<img width="40px" height="40px" src="/img/Instagram_Logo.png" alt="Twitter Logo">
-							</a>
-						</p>
-						<h4>Oyun ile hayallerinizi yaratın.</h4>
-					</div>
-				</div>
-				<div class="TwitterMain">
-					<a class="twitter-timeline"
-					href="https://twitter.com/ElderBloodFire"
-					data-height="300"
-					data-width="280"
-					data-chrome="noscrollbar">
-					Tweets by ElderBloodFire</a>
-					<script async src="//platform.twitter.com/widgets.js"
-					charset="utf-8"></script>
-				</div>
-			</div>
-		</div>
-		<!-- Footer -->
-		<div class="Footer">
-			<div class="FooterInside">
-				<div name="lang" lang="en">
-					<h4>All Rights Reserved. &copy; 2017-2018 Atakan ATEŞ.</h4>
-				</div>
-				<div name="lang" lang="tr">
-					<h4>Tüm hakları saklıdır. &copy; 2017-2018 Atakan ATEŞ.</h4>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- The Elder Blood Fire Banner -->
+    <div class="container-fluid p-0">
+      <div class="row-fluid backsider d-flex align-items-center">
+        <div class="col">
+            <!-- <div class="text-center">
+              <h1 class="display-3">The Elder Blood Fire</h1>
+            </div> -->
+            <!-- <button type="button" name="button" class="giffer"><img src="/img/Circler.gif" alt=""></button> -->
+        </div>
+      </div>
+      <!-- Story -->
+      <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1 name="lang" data-lang="Story">Story</h1>
+        <p>Story goes there!</p>
+      </div>
+      <!-- Slides, Links and Maxim -->
+      <div class="row-fluid p-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="SlideShow" class="carousel slide" data-ride="carousel">
 
-	</div>
-	<script type="text/javascript"  src="/js/LanguageChanger.js"></script>
-</body>
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#SlideShow" data-slide-to="0" class="active"></li>
+                <li data-target="#SlideShow" data-slide-to="1"></li>
+                <li data-target="#SlideShow" data-slide-to="2"></li>
+              </ul>
+
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/DragonRender.png" alt="Los Angeles" width="1100" height="500">
+                  <div class="carousel-caption">
+                    <h3>What we Do</h3>
+                    <p>Tada...</p>
+                  </div>
+                  <!-- <div class="carousel-content">
+                      <p>TEST</p>
+                  </div> -->
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/Background.jpg" alt="Chicago" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/MetaLash.jpeg" alt="New York" width="1100" height="500">
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#SlideShow" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#SlideShow" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+          <hr class="d-sm-none">
+          <div class="col-sm-4">
+            <h2 name="lang" data-lang="Look at">Look at 🧐❔</h2>
+            <a class="btn btn-link" href="/"><h5 name="lang" data-lang="Games">Games 🎮</h5></a>
+            <a class="btn btn-link" href="/"><h5 name="lang" data-lang="Artworks">Artworks 🎨</h5></a>
+            <h2 name="lang" data-lang="Maxim">Maxim</h2>
+            <p name="lang" data-lang="Create dreams with Game.">Create dreams with Game.</p>
+          </div>
+        </div>
+      </div>
+      <!-- About me! and Contact -->
+      <div class="row-fluid p-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>About me!</h2>
+            <p>About me!</p>
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-4">
+            <h2 name="lang" data-lang="Contact">Contact</h2>
+            <a class="btn btn-social btn-twitter rounded" href="https://twitter.com/ElderBloodFire">
+              <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social btn-instagram rounded" href="https://www.instagram.com/TheElderBloodFire">
+              <span class="fa fa-instagram"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron text-center p-4" style="margin: 0">
+        <p name="lang" data-lang="Footer">All Rights Reserved. &copy; 2017-2018 Atakan ATEŞ.</p>
+      </div>
+    </div>
+  </body>
+  <!-- ThirdParty -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" crossorigin="anonymous"></script>
+  <script src="/ThirdParty/i18n.min.js" charset="utf-8"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+  <!--  -->
+  <!-- 🔥 -->
+  <script src="/js/i18ner.js" charset="utf-8"></script>
+  <script>
+    // Max Scrollable Y value of the page
+    var maxScrollableY = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    // Top Nav to left animation
+    var navToLeft = anime({
+      targets: '#nav-top',
+      borderBottomLeftRadius: 0,
+      borderBottomRightRadius: 50,
+      left: 0,
+      width: "80px",
+      duration: 350,
+      elasticity: 250,
+      autoplay: false,
+      begin: function(anim) {
+        $("#nav-text").text("☰");
+      },
+      complete: function(anim) {
+      }
+    });
+
+    // Bot Nav animation
+    var navFromBot = anime({
+      targets: '#nav-bot',
+      bottom: 2,
+      duration: 1000,
+      elasticity: 400,
+      autoplay: false,
+    });
+
+    // Flag Nav animation
+    var navFlag =  anime({
+      targets: '.nav-flag',
+      left: function(target, index, totalTargets) {
+        return 20 + ((totalTargets - index - 1) * 80);
+      },
+      top: function(target, index, totalTargets) {
+        return 20 + (index * 80);
+      },
+      duration: 450,
+      elasticity: 350,
+      autoplay: false,
+    });
+
+    // Scrolling Callbacks for animations
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      // console.log(window.pageYOffset  + ":" + scrollY + "--" + maxScrollableY);
+      // console.log(navFromBot.reversed + " : " + navFromBot.completed);
+
+      if (scrollY < 200) {
+        if (navFromBot.completed || navFromBot.reversed) {
+          navFromBot.reverse();
+          navFromBot.play();
+        }
+      } else if (scrollY > 200 && maxScrollableY - scrollY > 200) {
+        $("#nav-text").text("☰");
+        navToLeft.play();
+        // ~may add reverse~
+
+        if (navFromBot.completed || navFromBot.reversed) {
+          navFromBot.reverse();
+          navFromBot.play();
+        }
+      } else if (maxScrollableY - scrollY < 200) {
+        navFromBot.play();
+
+        if (navFromBot.completed && navFromBot.reversed) {
+          navFromBot.reverse();
+          navFromBot.play();
+        }
+      }
+    }
+
+    $("#nav-top").click(function() {
+      if ($("#nav-text").text() == "☰") {
+        if (!navFlag.completed) {
+          navFlag.play();
+        } else {
+          navFlag.reverse();
+          navFlag.play();
+        };
+      }
+    });
+
+
+    $("#nav-bot").click(function() {
+      navFromBot.reverse();
+      navFromBot.play();
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+
+
+    $('.fa').hover(
+        function() {
+            var $this = $(this);
+            $this.data('', $this.text());
+            $this.text(" TheElderBloodFire");
+        },
+        function() {
+            var $this = $(this);
+            $this.text($this.data(''));
+        }
+    );
+
+    $('.flag').hover(
+        function() {
+          var $this = $(this);
+          $this.children().show();
+        },
+        function() {
+          var $this = $(this);
+          $this.children().hide();
+        }
+    );
+
+    // On Language Change
+    function changeLanguage(language) {
+      // i18ner datas
+      lang = language;
+      getLangJSON(i18ner);
+
+
+      //reset Anims
+      navToLeft.reset();
+      navFlag.reverse();
+      navFlag.play();
+    }
+    // data("ts-speed");
+
+  </script>
 </html>

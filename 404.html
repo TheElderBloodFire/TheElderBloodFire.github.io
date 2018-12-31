@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/FaviconPixel.png">
+    <title>TheElderBloodFire</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Page Not Found!</h1>
+    <p>Time to play time...</p>
+    <h1>___Do some Game___</h1>
+  </body>
+  <!-- ThirdParty -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" crossorigin="anonymous"></script>
+  <script src="/ThirdParty/i18n.min.js" charset="utf-8"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+  <!--  -->
+  <!-- 🔥 -->
+  <script src="/js/i18ner.js" charset="utf-8"></script>
+  <script>
+    // Max Scrollable Y value of the page
+    var maxScrollableY = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+    //
+    var navToLeft = anime({
+      targets: '#nav-top', 
+      borderBottomLeftRadius: 0,
+      borderBottomRightRadius: 50,
+      left: 0,
+      width: "80px",
+      duration: 350,
+      elasticity: 250,
+      autoplay: false,
+      begin: function(anim) {
+        $("#nav-text").text("☰");     
+      },
+      complete: function(anim) {
+        // $("#nav-text").text("TheElderBloodFire")
+      }
+    });
+
+    var navFromBot = anime({
+      targets: '#nav-bot', 
+      bottom: 2,
+      duration: 1000,
+      elasticity: 400,
+      autoplay: false,
+    });
+    
+    window.onscroll = function() {scrollFunction()};
+    // window.pageYOffset = scrollY
+    function scrollFunction() {      
+      // console.log(window.pageYOffset  + ":" + scrollY + "--" + maxScrollableY);      
+
+      // console.log(navFromBot.reversed + " : " + navFromBot.completed);
+      
+
+      if (scrollY < 200) {
+        // if (navToLeft.completed) {
+        //   navToLeft.reverse();
+        //   navToLeft.play();
+        // } 
+
+        if (navFromBot.completed || navFromBot.reversed) {
+          navFromBot.reverse();
+          navFromBot.play();
+        }
+      } else if (scrollY > 200 && maxScrollableY - scrollY > 200) {
+        navToLeft.play();
+        // ~may add reverse~
+
+        if (navFromBot.completed || navFromBot.reversed) {
+          navFromBot.reverse();
+          navFromBot.play();
+        }
+      } else if (maxScrollableY - scrollY < 200) {
+        navFromBot.play(); 
+
+        if (navFromBot.completed && navFromBot.reversed) {
+          navFromBot.reverse();
+          navFromBot.play();
+        }                         
+      }
+    }
+
+    $("#nav-bot").click(function() {
+      navFromBot.reverse();  
+      navFromBot.play();
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    });
+ 
+
+    $('.fa').hover(
+        function() {
+            var $this = $(this); 
+            $this.data('', $this.text());
+            $this.text(" TheElderBloodFire");
+        },
+        function() {
+            var $this = $(this);
+            $this.text($this.data(''));
+        }
+    );
+  </script>
+</html>
