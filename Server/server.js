@@ -68,6 +68,9 @@ app.get('/img/Background.jpg', function (req, res) {
 app.get('/img/ParticleScene.jpg', function (req, res) {
   res.sendFile('ParticleScene.jpg', { root: path.join(__dirname, '../img') });
 })
+app.get('/img/Cinematic.jpg', function (req, res) {
+  res.sendFile('Cinematic.jpg', { root: path.join(__dirname, '../img') });
+})
 
 app.get('/img/Circler.gif', function (req, res) {
   res.sendFile('Circler.gif', { root: path.join(__dirname, '../img') });
@@ -79,6 +82,9 @@ app.get('/img/Circler.gif', function (req, res) {
 app.get('/js/i18ner.js', function (req, res) {
   res.sendFile('i18ner.js', { root: path.join(__dirname, '../js') });
 })
+app.get('/js/index.js', function (req, res) {
+  res.sendFile('index.js', { root: path.join(__dirname, '../js') });
+})
 
 // Çeviriler
 app.get('/i18n/en/general.json', function (req, res) {
@@ -89,8 +95,8 @@ app.get('/i18n/tr/general.json', function (req, res) {
 })
 
 // Üçüncül İçerikler
-app.get('/ThirdParty/i18n.min.js', function (req, res) {
-  res.sendFile('i18n.min.js', { root: path.join(__dirname, '../ThirdParty') });
+app.get('/i18n/ThirdParty/i18n.min.js', function (req, res) {
+  res.sendFile('i18n.min.js', { root: path.join(__dirname, '../i18n/ThirdParty') });
 })
 
 // app.use(express.static(path.join(__dirname, '../')));

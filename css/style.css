@@ -6,12 +6,10 @@ html, body {
 }
 .backsider {
 	background-repeat: no-repeat;
-	background-image: url("/img/ParticleScene.jpg");
+	background-image: url("/img/Cinematic.jpg");
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
-	/* height: 100%; */
-	/* height: 500px; */
 	height: 100vh;
   overflow: auto;
 	opacity: 1;

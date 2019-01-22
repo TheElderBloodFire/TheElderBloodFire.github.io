@@ -1,15 +1,19 @@
 {
-  "values":{
+  "values": {
+    "TheElderBloodFire": "TheElderBloodFire",
     "Story": "Story",
+    "StoryDescription": "Story Description",
+    "MetaLashDescription": "MetaLash Description",
+    "Games": "Games",
+    "GamesDescription": "Coming Soon...",
+    "Artworks": "Artworks",
+    "ArtworksDescription": "ArtworksDescription",
     "Look at": "Look at 🧐❔",
-    "Games": "Games 🎮",
-    "Artworks": "Artworks 🎨",
     "Maxim": "Maxim",
+    "MaximDescription": "Create dreams with Game.",
+    "About": "About",
+    "AboutDescription": "AboutDescription",
     "Contact": "Contact",
-    "Footer": "All Rights Reserved. © 2017-2018 Atakan ATEŞ.",
-    "Create dreams with Game.": "Create dreams with Game.",
-    "Turkish": "Turkish",
-    "English": "English",
-    "TheElderBloodFire": "TheElderBloodFire"
+    "Footer": "Copyright © 2017-2019 Atakan ATEŞ"
   }
 }

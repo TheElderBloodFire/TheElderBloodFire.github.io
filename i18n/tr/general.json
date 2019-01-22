@@ -1,15 +1,19 @@
 {
-  "values":{
+  "values": {
+    "TheElderBloodFire": "Ulukan Ateşi",
     "Story": "Öykü",
+    "StoryDescription": "Öykü Açıklaması",
+    "MetaLashDescription": "MetaLash'in Anlatımı",
+    "Games": "Oyunlar",
+    "GamesDescription": "Yakında...",
+    "Artworks": "Sanatsal Çalışmalar",
+    "ArtworksDescription": "Ejderler",
     "Look at": "Gözat 🧐❔",
-    "Games": "Oyunlar 🎮",
-    "Artworks": "Sanatsal Çalışmalar 🎨",
     "Maxim": "Özdeyiş",
+    "MaximDescription": "Oyun ile düşler yaratın.",
+    "About": "Hakkımda",
+    "AboutDescription": "Hakkımda Anlatım",
     "Contact": "İletişim",
-    "Footer": "Tüm hakları saklıdır. © 2017-2018 Atakan ATEŞ.",
-    "Create dreams with Game.": "Oyun ile düşler yaratın.",
-    "Turkish": " Türkçe",
-    "English": " İngilizce",
-    "TheElderBloodFire": "Ulukan Ateşi"
+    "Footer": "Telif hakkı © 2017-2019 Atakan ATEŞ"
   }
 }
