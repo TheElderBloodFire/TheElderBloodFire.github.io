@@ -1,174 +1,158 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="/img/FaviconPixel.png">
-<title>Games</title>
-<link rel="stylesheet" href="../css/style.css" />
-</head>
-<body>
-	<div id="MainContainer" class="ContainerOut">
-		<div id="MainContainerInside" class="ContainerInside">
-			<!-- Header -->
-			<div id="Header">
-				<div class="HeaderElement ContainerInside CenterText">
-					<span id="Menu" class="Dropdown">&#9776;
-						<div class="DropdownContent">
-							<a href="/Games/Games">
-								<div name="lang" lang="en">
-									<div>Games</div>
-								</div>
-								<div name="lang" lang="tr">
-									<div>Oyunlar</div>
-								</div>
-							</a>
-							<a href="/Artworks/Artworks">
-								<div name="lang" lang="en">
-									<div>Artworks</div>
-								</div>
-								<div name="lang" lang="tr">
-									<div>Sanatsal Çalışmalar</div>
-								</div>
-							</a>
-							<a href="#MainText" onclick="ChangeLanguage();">
-								<div>TR/EN</div>
-							</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/FaviconPixel.png">
+    <title>Games</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Top-Nav -->
+    <nav id="top-nav" class="d-flex justify-content-center" style="z-index: 10;">
+      <div id="nav-top" class="d-flex justify-content-center nav-top" style="z-index: 10;">
+        <h3 id="nav-text" class="nav-text" data-lang="TheElderBloodFire">TheElderBloodFire</h3>
+        <!-- ☰ TheElderBloodFire  -->
+      </div>
+    </nav>
+
+    <nav id="flag-nav" class="d-flex justify-content-center" style="z-index: 10;">
+      <a id="tr" class="btn btn-social btn-instagram rounded nav-flag" onclick="changeLanguage('tr');" style="z-index: 10;">
+          <span class="flag">🇹🇷 <span style="display:none;">Türkçe</span></span>
+        </a>
+        <a id="en" class="btn btn-social rounded nav-flag" onclick="changeLanguage('en');" style="z-index: 10;">
+          <span class="flag">🇬🇧/🇺🇸 <span style="display:none;">English</span></span>
+        </a>
+    </nav>
+
+    <!-- Bot-Nav -->
+    <nav id="bot-nav" class="d-flex justify-content-center">
+      <div id="nav-bot" class="d-flex justify-content-center nav-bot nav-text">
+          <img class="nav-text" src="/img/FaviconPixel.png" alt="ToTop">
+      </div>
+    </nav>
+
+    <!-- The Elder Blood Fire Banner -->
+    <div class="container-fluid p-0">
+	  <div id="SlideShow" class="carousel slide row-fluid p-0 d-flex" data-ride="carousel">
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#SlideShow" data-slide-to="0" class="active"></li>
+				<li data-target="#SlideShow" data-slide-to="1"></li>
+				<li data-target="#SlideShow" data-slide-to="2"></li>
+			</ul>
+			<!-- The Slideshow -->
+			<div class="carousel-inner p-0">
+				<div class="carousel-item active backsider cinematic" style="background-image: url('/img/Cinematic.jpg'); z-index: 0;">
+				</div>
+				<div class="carousel-item backsider cinematic" style="background-image: url('/img/MetaLash.jpeg'); z-index: 0;">
+				</div>
+				<div class="carousel-item backsider cinematic" style="background-image: url('/img/Cinematic.jpg'); z-index: 0;">
+				</div>
+			</div>
+			<!-- Left and Right Controls -->
+			<a class="carousel-control-prev" href="#SlideShow" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#SlideShow" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+      <!-- Story -->
+      <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1 data-lang="Story">Story</h1>
+        <p data-lang="StoryDescription">Story goes there!</p>
+      </div>
+      <!-- Slides, Links and Maxim -->
+      <div class="row-fluid p-5">
+        <div class="row">
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-4">
+						<div class="list-group" id="list-tab" role="tablist">
+							<a class="list-group-item list-group-item-action active" id="list-metalash-list" data-toggle="list" href="#list-metalash" role="tab" aria-controls="metalash">MetaLash</a>
+							<a class="list-group-item list-group-item-action" id="list-KIVIL-list" data-toggle="list" href="#list-KIVIL" role="tab" aria-controls="KIVIL">KIVIL</a>
+							<a class="list-group-item list-group-item-action" id="list-InfiniteGate-list" data-toggle="list" href="#list-InfiniteGate" role="tab" aria-controls="InfiniteGate">Infinite Gate</a>
+							<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
 						</div>
-					</span>
-				</div>
-				<nav id="HeadNav" class="ContainerInside">
-					<ul id="HeaderList" class="ContainerInside">
-						<li>
-							<div class="HeaderElement ContainerInside CenterText">
-								<a href="/">
-									<span>TheElderBloodFire</span>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="HeaderElement ContainerInside CenterText">
-								<a href="/AtakanAtes">
-									<span>Atakan Ateş</span>
-								</a>
-							</div>
-						</li>
-					</ul>
-			</nav>
-		</div>
-		<!-- Banner -->
-		<div class="Banner">
-			<div class="BannerInside">
-				<a href="/"><img alt="Banner" src="/img/TheElderBloodFireWebSite.jpg"></a>
-			</div>
-		</div>
-		<!-- Main -->
-		<div id="MainText" class="MainText">
-			<div class="MainTextInside StoryPart">
-				<div name="lang" lang="en">
-					<h2>Games</h2>
-					<p>I share my games under the name of TheElderBloodFire.</p>
-					<p>Look at <a href="Metalash/Metalash">Metalash</a>.</p>
-					<p>
-						<br>Also see my
-						<a href="https://twitter.com/ElderBloodFire">Twitter</a>
-						,
-						<a href="https://www.instagram.com/TheElderBloodFire">Instagram</a>
-						.
-					</p>
-
-					<h3>Create dreams with Game...</h3>
-
-				</div>
-
-				<div name="lang" lang="tr">
-					<h2>Oyunlarım</h2>
-					<p>Oyunlarımı TheElderBloodFire adı altında paylaşıyorum.</p>
-					<p><a href="Metalash/Metalash">Metalash</a>'e göz atmak istermisiniz?</p>
-					<p>
-						<br>Ayrıca bakın:
-						<a href="https://twitter.com/ElderBloodFire">Twitter</a>
-						,
-						<a href="https://www.instagram.com/TheElderBloodFire">Instagram</a>
-						.
-					</p>
-
-					<p></p>
-
-					<h3>Oyun yaratarak düşler oluştur...</h3>
-				</div>
-			</div>
-		</div>
-		<!-- Work Viewer -->
-		<div class="WorkViewer">
-			<div class="WorkViewerInside">
-				<div class="WorkContents">
-					<iframe id="WorkViewer" src="../WorkViewers.html" width="100%" height="100%" style="border:none;"></iframe>
-				</div>
-			</div>
-		</div>
-		<!-- Contact -->
-		<div class="Contact">
-			<div class="ContactInside">
-				<div class="ContactMain">
-					<div name="lang" lang="en">
-						<h2>Contact</h2>
-						<p>
-							TheElderBloodFire
-						</p>
-						<p>
-							<br><h4>See my pages:</h4>
-							<a href="https://twitter.com/ElderBloodFire" class="LinkText">
-								<img width="40px" height="40px" src="/img/Twitter_Logo.png" alt="Twitter Logo">
-							</a>
-							<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">
-								<img width="40px" height="40px" src="/img/Instagram_Logo.png" alt="Twitter Logo">
-							</a>
-						</p>
-						<h4>Create dreams with Game...</h4>
 					</div>
-					<div name="lang" lang="tr">
-						<h2>İletişim</h2>
-						<p>
-							TheElderBloodFire
-						</p>
-						<p>
-							<br><h4>Sayfalarıma bakın:</h4>
-							<a href="https://twitter.com/ElderBloodFire" class="LinkText">
-								<img width="40px" height="40px" src="/img/Twitter_Logo.png" alt="Twitter Logo">
-							</a>
-							<a href="https://www.instagram.com/TheElderBloodFire" class="LinkText">
-								<img width="40px" height="40px" src="/img/Instagram_Logo.png" alt="Twitter Logo">
-							</a>
-						</p>
-						<h4>Oyun ile hayallerinizi yaratın.</h4>
+					<div class="col-8">
+						<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="list-metalash" role="tabpanel" aria-labelledby="list-metalash-list">
+							<h3>MetaLash</h3>
+							<p data-lang="MetaLashDescription">MetaLash Description</p>
+							<a href="/Content/Games/Metalash" data-lang="Look at">Look at</a>
+						</div>
+						<div class="tab-pane fade" id="list-KIVIL" role="tabpanel" aria-labelledby="list-KIVIL-list">
+							<h3>KIVIL</h3>
+							<p data-lang="GamesDescription">Coming Soon...</p>
+							<p>2020</p>
+							<div class="progress m-3">
+								<div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+							</div>
+							<a href="/Content/Games/KIVIL" data-lang="Look at">Look at</a>
+						</div>
+						<div class="tab-pane fade" id="list-InfiniteGate" role="tabpanel" aria-labelledby="list-InfiniteGate-list">
+							<h3>Infinite Gate</h3>
+							<p data-lang="GamesDescription">Coming Soon...</p>
+							<p>2019</p>
+							<div class="progress m-3">
+								<div class="progress-bar progress-bar-success" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+						</div>
 					</div>
 				</div>
-				<div class="TwitterMain">
-					<a class="twitter-timeline"
-					href="https://twitter.com/ElderBloodFire"
-					data-height="300"
-					data-width="280"
-					data-chrome="noscrollbar">
-					Tweets by ElderBloodFire</a>
-					<script async src="//platform.twitter.com/widgets.js"
-					charset="utf-8"></script>
-				</div>
 			</div>
-		</div>
-		<!-- Footer -->
-		<div class="Footer">
-			<div class="FooterInside">
-				<div name="lang" lang="en">
-					<h4>All Rights Reserved. &copy; 2017-2018 Atakan ATEŞ.</h4>
-				</div>
-				<div name="lang" lang="tr">
-					<h4>Tüm hakları saklıdır. &copy; 2017-2018 Atakan ATEŞ.</h4>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-	<script type="text/javascript"  src="/js/LanguageChanger.js"></script>
-</body>
+          <hr class="d-sm-none">
+          <div class="col-sm-4">
+            <h2 data-lang="Look at">Look at 🧐❔</h2>
+            <h5><a class="btn btn-link" href="/"><h5 data-lang="TheElderBloodFire">The ElderBloodFire</h5></a>🔥</h5>
+            <h5><a class="btn btn-link" href="/Content/Games"><h5 data-lang="Games">Games</h5></a>🎮</h5>
+            <h5><a class="btn btn-link" href="/Content/Artworks"><h5 data-lang="Artworks">Artworks</h5></a>🎨</h5>
+            <h2 data-lang="Maxim">Maxim</h2>
+            <p data-lang="MaximDescription">Create dreams with Game.</p>
+          </div>
+        </div>
+      </div>
+      <!-- About me! and Contact -->
+      <div class="row-fluid p-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 data-lang="About">About me!</h2>
+            <p data-lang="AboutDescription">About me!</p>
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-4">
+            <h2 data-lang="Contact">Contact</h2>
+            <a class="btn btn-social btn-twitter rounded" href="https://twitter.com/ElderBloodFire">
+              <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social btn-instagram rounded" href="https://www.instagram.com/TheElderBloodFire">
+              <span class="fa fa-instagram"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="jumbotron text-center p-4" style="margin: 0">
+        <p data-lang="Footer">Copyright &copy; 2017-2019 Atakan ATEŞ</p>
+      </div>
+    </div>
+  </body>
+  <!-- ThirdParty -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" crossorigin="anonymous"></script>
+  <script src="/i18n/ThirdParty/i18n.min.js" charset="utf-8"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+  <!--  -->
+  <!-- 🔥 -->
+  <script src="/js/i18ner.js" charset="utf-8"></script>
+  <script src="/js/index.js"></script>
 </html>

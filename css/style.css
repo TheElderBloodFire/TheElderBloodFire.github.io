@@ -4,17 +4,18 @@ html, body {
 	height: 100%;
 	margin: 0 auto;
 }
-.backsider {
+.cinematic {
 	background-repeat: no-repeat;
 	background-image: url("/img/Cinematic.jpg");
 	background-size: cover;
 	background-position: center center;
+}
+.backsider {
 	width: 100%;
 	height: 100vh;
-  overflow: auto;
+  	overflow: auto;
 	opacity: 1;
-	visibility:
-	inherit;
+	visibility: inherit;
 	z-index: 20;
 }
 .carousel-inner img {

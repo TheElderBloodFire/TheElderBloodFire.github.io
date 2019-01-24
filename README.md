@@ -2,6 +2,6 @@
 
 [The Elder Blood Fire](https://theelderbloodfire.com)
 
-##LICENSE
+## LICENSE
 
 [License](./LICENSE)

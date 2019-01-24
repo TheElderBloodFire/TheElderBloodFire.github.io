@@ -3,7 +3,7 @@
     "TheElderBloodFire": "Ulukan Ateşi",
     "Story": "Öykü",
     "StoryDescription": "Öykü Açıklaması",
-    "MetaLashDescription": "MetaLash'in Anlatımı",
+    "MetaLashDescription": "Bilim adamları yeni bir alaşım buldu.\n Metalash senin yardımını bekliyor...",
     "Games": "Oyunlar",
     "GamesDescription": "Yakında...",
     "Artworks": "Sanatsal Çalışmalar",
@@ -11,8 +11,9 @@
     "Look at": "Gözat 🧐❔",
     "Maxim": "Özdeyiş",
     "MaximDescription": "Oyun ile düşler yaratın.",
+    "MaximArtDescription": "Düşleriniz sanatı, sanat ise evrenininizi yaratsın...",
     "About": "Hakkımda",
-    "AboutDescription": "Hakkımda Anlatım",
+    "AboutDescription": "TheElderBloodFire(Ulukan Ateşi) kurgusal bir öyküdür.\n Aynı zamanda çeşitli oyunların ve sanatsal çalışmaların paylaştığı bir ortamdır.",
     "Contact": "İletişim",
     "Footer": "Telif hakkı © 2017-2019 Atakan ATEŞ"
   }

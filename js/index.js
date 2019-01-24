@@ -139,6 +139,10 @@ function languageQuery() {
         var newAttr = $(element).attr('href').split("?")[0] + '?lang=' + lang;
         $(element).attr('href', newAttr);
     }); 
+
+    // Change Current Page Url
+    // var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?lang=' + lang;
+    // window.history.pushState({path:newurl},'',newurl);
 }
 
 $(document).ready(function() {

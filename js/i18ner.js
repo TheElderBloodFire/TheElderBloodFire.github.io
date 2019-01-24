@@ -5,9 +5,9 @@ var en = {};
 $(document).ready(function() {
   var localLang = navigator.language || navigator.userLanguage;
 
-  if (localLang === "tr-TR" || window.location.href.endsWith('?lang=tr')) {
+  if ((localLang === "tr-TR" || window.location.href.endsWith('?lang=tr')) && !window.location.href.endsWith('?lang=en')) {
     lang = "tr";
-  }else {
+  } else {
     lang = "en";
   }
 
@@ -58,6 +58,7 @@ function i18ner() {
   }
 }
 
+/*
 // Json based data-lang
 var languageDatas = {}
 
@@ -85,3 +86,4 @@ function downloadFile(content, fileName, contentType) {
   a.download = fileName;
   a.click();
 }
+*/

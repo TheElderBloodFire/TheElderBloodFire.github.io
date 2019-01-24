@@ -11,18 +11,146 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Page Not Found!</h1>
-    <p>Time to play time...</p>
-    <h1>___Do some Game___</h1>
+    <!-- Top-Nav -->
+    <nav id="top-nav" class="d-flex justify-content-center">
+      <div id="nav-top" class="d-flex justify-content-center nav-top">
+        <h3 id="nav-text" class="nav-text" data-lang="TheElderBloodFire">TheElderBloodFire</h3>
+        <!-- ☰ TheElderBloodFire  -->
+      </div>
+    </nav>
+
+    <nav id="flag-nav" class="d-flex justify-content-center">
+      <a id="tr" class="btn btn-social btn-instagram rounded nav-flag" onclick="changeLanguage('tr');">
+          <span class="flag">🇹🇷 <span style="display:none;">Türkçe</span></span>
+        </a>
+        <a id="en" class="btn btn-social rounded nav-flag" onclick="changeLanguage('en');">
+          <span class="flag">🇬🇧/🇺🇸 <span style="display:none;">English</span></span>
+        </a>
+    </nav>
+
+    <!-- Bot-Nav -->
+    <nav id="bot-nav" class="d-flex justify-content-center">
+      <div id="nav-bot" class="d-flex justify-content-center nav-bot nav-text">
+          <img class="nav-text" src="/img/FaviconPixel.png" alt="ToTop">
+      </div>
+    </nav>
+
+    <!-- The Elder Blood Fire Banner -->
+    <div class="container-fluid p-0">
+      <div class="row-fluid backsider cinematic d-flex align-items-center">
+        <div class="col">
+            <div class="text-center">
+              <h1 class="display-3 nav-text" style="color: white">Page Not Found!</h1>
+              <p class="display-3 nav-text" style="color: white">Time to play time...</p>
+            </div>            
+        </div>
+      </div>
+      <!-- Story -->
+      <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1 data-lang="Story">Story</h1>
+        <p data-lang="StoryDescription">Story goes there!</p>
+      </div>
+      <!-- Slides, Links and Maxim -->
+      <div class="row-fluid p-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="SlideShow" class="carousel slide" data-ride="carousel">
+
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#SlideShow" data-slide-to="0" class="active"></li>
+                <li data-target="#SlideShow" data-slide-to="1"></li>
+                <li data-target="#SlideShow" data-slide-to="2"></li>
+              </ul>
+
+              <!-- The Slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="/Content/Games/Metalash">
+                    <img src="/img/MetaLash.jpeg" alt="MetaLash" width="1100" height="500">
+                    <div class="carousel-caption">                               
+                      <h3>MetaLash</h3>        
+                      <p data-lang="MetaLashDescription">MetaLash Description</p>
+                    </div>
+                  </a>   
+                </div>
+                <div class="carousel-item">
+                  <a href="/Content/Games">
+                    <img src="/img/Cinematic.jpg" alt="Games" width="1100" height="500">
+                    <div class="carousel-caption">
+                      <h3 data-lang="Games">Games</h3>
+                      <p data-lang="GamesDescription">Coming Soon...</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="/Content/Artworks">
+                    <img src="/img/DragonRender.png" alt="Artworks" width="1100" height="500">
+                    <div class="carousel-caption">
+                      <h3 data-lang="Artworks">Artworks</h3>
+                      <p data-lang="ArtworksDescription">Dragon Series</p>
+                    </div>
+                    <!-- <div class="carousel-content">
+                        <p>TEST</p>
+                    </div> -->
+                  </a>
+                </div>
+              </div>
+
+              <!-- Left and Right Controls -->
+              <a class="carousel-control-prev" href="#SlideShow" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#SlideShow" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+          <hr class="d-sm-none">
+          <div class="col-sm-4">
+            <h2 data-lang="Look at">Look at 🧐❔</h2>
+            <h5><a class="btn btn-link" href="/"><h5 data-lang="TheElderBloodFire">The ElderBloodFire</h5></a>🔥</h5>
+            <h5><a class="btn btn-link" href="/Content/Games"><h5 data-lang="Games">Games</h5></a>🎮</h5>
+            <h5><a class="btn btn-link" href="/Content/Artworks"><h5 data-lang="Artworks">Artworks</h5></a>🎨</h5>
+            <h2 data-lang="Maxim">Maxim</h2>
+            <p data-lang="MaximDescription">Create dreams with Game.</p>
+          </div>
+        </div>
+      </div>
+      <!-- About me! and Contact -->
+      <div class="row-fluid p-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 data-lang="About">About me!</h2>
+            <p data-lang="AboutDescription">About me!</p>
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-4">
+            <h2 data-lang="Contact">Contact</h2>
+            <a class="btn btn-social btn-twitter rounded" href="https://twitter.com/ElderBloodFire">
+              <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social btn-instagram rounded" href="https://www.instagram.com/TheElderBloodFire">
+              <span class="fa fa-instagram"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="jumbotron text-center p-4" style="margin: 0">
+        <p data-lang="Footer">Copyright &copy; 2017-2019 Atakan ATEŞ</p>
+      </div>
+    </div>
   </body>
   <!-- ThirdParty -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" crossorigin="anonymous"></script>
-  <script src="/ThirdParty/i18n.min.js" charset="utf-8"></script>
+  <script src="/i18n/ThirdParty/i18n.min.js" charset="utf-8"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
   <!--  -->
   <!-- 🔥 -->
   <script src="/js/i18ner.js" charset="utf-8"></script>
+  <script src="/js/index.js"></script>
 </html>
