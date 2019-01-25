@@ -1,255 +1,106 @@
 @charset "UTF-8";
-html, body{
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-	background: #ade4f5;
-}
-.ContainerOut{
+html, body {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 }
-.ContainerInside{
-	margin: 0 auto;
+.cinematic {
+	background-repeat: no-repeat;
+	background-image: url("/img/Cinematic.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+.backsider {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
+  	overflow: auto;
+	opacity: 1;
+	visibility: inherit;
+	z-index: 20;
 }
-.CenterText{
-	text-align: center;
-	vertical-align: middle;
+.carousel-inner img {
+		width: 100%;
+		height: 100%;
 }
-.LinkText{
-		text-decoration: none;
-		 color: #1d3e7d;
+.giffer {
+	background: space;
+	border: 0;
 }
-.LinkText:hover{
-	color: #d24804;
+.giffer :hover {
+	background: black;
 }
-#MainContainer{
-	float: left;
-}
-#MainContainerInside{
-  /*width: 1024px;
-  height: 620px;*/
-}
-#Header{
-	width: 100%;
-	height: 60px;
-	max-height: 80px;
+.nav-top {
 	position: fixed;
-	background: Aquamarine;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	border-radius: 0 0 50px 50px;
+	background: white;
+	width: 300px;
+	/* border: solid 1px; */
+	z-index: 1;
 }
-#HeadNav{
-	/*max-width: 1200px;*/
-	max-width: 80%;
-	min-width: 320px;
-	float: none;
+.nav-text{
+	font-family: 'Charm';
+	/* Can't Select */
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */    
+	/* Cursor */
+	cursor: pointer;
 }
-#HeaderList{/*HeadNav ul*/
-	width: 100%;
-	list-style: none;
-	text-align: center;
-	background: #1ec5c7;
-	color: black;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+.nav-bot {
+	position: fixed;
+	border-radius: 20px 20px 10px 10px;
+	background-color:rgba(0, 0, 0, 0.08);
+	width: 60px;
+	bottom: -100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: solid 0px black;
+	z-index: 1;
 }
-.HeaderElement{/*HeadNav li*/
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-	display: inline;
-}
-.HeaderElement span{/*HeadNav li span*/
-	/*width: 40%;*/
-	height: 100%;
-	min-width: 25%;
-	max-width: 200px;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 60px;
-	float: left;
-	background: #4DFF7F;
-	color: black;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-}
-.HeaderElement span:hover{
-	color: white;
-	background: Aquamarine;
-}
-.HeaderElement a{
-		text-decoration: none;
+.nav-bot:hover {
+	background-color:rgba(0, 0, 0, 0.95);
+	border: solid 1px black;
 }
 
-.StoryPart{
+/* Social Media -> font-awesome */
+.fa {
+	padding: 20px;
+	/* font-size: 30px; */
 	text-align: center;
+	text-decoration: none;
+	margin: 2px 2px;
+	border-radius: 50px;
+}
+.fa:hover {
+	opacity: 0.7;
+}
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+.fa-instagram {
+	background: #125688;
+	color: white;
 }
 
-#Menu{
-	display: inline;
-	min-width: 10%;
-	background: Aquamarine;
-}
-#Menu a{
-	color: black;
-}
-#Menu a:hover{
-	color: white;
-}
-.Dropdown{
-	position: relative;
-	display: inline-block;
-}
-.DropdownContent {
-		color: black;
-    display: none;
-    position: absolute;
-    background-color: Aquamarine;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-.Dropdown:hover .DropdownContent {
-    display: block;
-}
-/*banner*/
-.Banner {
-		max-width: 1024px;
-		padding-top: 60px; /*		padding-top: 80px;*/
-		margin: 0 auto;
-}
-.BannerInside img{
-	/*padding-top: 20px;
-	padding-bottom: 20px;
-	width: 80%;*/
-	width: 100%;
-	/*max-width: 1000px;
-	max-height: 200px;*/
-	display: block;
-	margin: 0 auto;
-}
-/*MainText*/
-.MainText{
-	min-height: 600px;
-	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background: #b9d7ec;
-}
-.MainTextInside{
-	height: 80%;
-	width: 90%;
-	/* max-height: 600px; */
-	margin: 0 auto;
-	padding: 10px;
-	box-shadow: 1px 6px 20px 10px rgba(0,0,0,0.2);
-}
-.WorkViewer{
-	height: 360px;
-	width: 100%;
-	background: #9fced6;
-	box-shadow: 1px 6px 20px 10px rgba(0,0,0,0.2);
-}
-.WorkViewerInside{
-	height: 95%;
-	width: 80%;
-	min-width: 300px;
-	padding: 8px;
-	margin: 0 auto;
-	background: #80bac3;
-	box-shadow: 1px 6px 20px 10px rgba(0,0,0,0.2);
-}
-.WorkViewerButtons {
-	height: 10%;
-	width: 300px;
-	border-width: 0px;
-	margin: 0 auto;
-	background: #afdbe2;
-	box-shadow: inset 0 0 20px 4px rgba(0,0,0,0.2);
-}
-.WorkViewerButtons button{
-	height: 100%;
-	width: 40%;
-	border-width: 0px;
-	margin: 0 auto;
-	background: #8be8c9;
-	box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
-}
-.WorkContents{
-	/*float: left;*/
-	/*margin-right: 10px;*/
-	height: 100%;
-	width: 300px;
-	background: #afdbe2;
-	margin: 0 auto;
-	box-shadow: 1px 6px 20px 10px rgba(0,0,0,0.2);
-}
-.WorkContent{
-	/*float: left;*/
-	/*margin-right: 10px;*/
-	height: 90%;
-	width: 300px;
-	background: #afdbe2;
-	margin: 0 auto;
-}
-.WorkContent iframe{
-	height: 100%;
-	border-width: 0px;
-	margin: 0 auto;
-	background: #afdbe2;
-	box-shadow: inset -1px -6px 20px 2px rgba(0,0,0,0.2);
-}
-.WorkContentInActive{
-	height: 90%;
-	width: 300px;
-	background: #afdbe2;
-	margin: 0 auto;
-	z-index: -5;
-	position: absolute;
-	visibility: hidden;
-}
-.Contact{
-	width: 100%;
-	height: 400px;
-	max-height: 800px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-.ContactInside{
-	width: 80%;
-	height: 100%;
-	margin: 0 auto;
-	background: #cff6ff;
-	padding: 10px;
-	box-shadow: 1px 6px 20px 10px rgba(0,0,0,0.2);
-}
-.ContactMain{
-	height: 80%;
-	width: 50%;
-	float: left;
-}
-.TwitterMain {
-	height: 80%;
-	width: 40%;
-	float: left;
-	background: #cff6ff;
-}
-/*Footer*/
-.Footer{
-	width: 100%;
-	height: 50px;
-	float: left;
-	display: block;
-}
-.FooterInside{
-	width: 90%;
-	height: 50px;
-	/* background: DarkTurquoise; */
-	background: #15a9ab;
-	color: white;
-	margin: 0 auto;
-}
-.FooterInside h4{
+/* flags */
+.flag {
+	padding: 20px;
 	text-align: center;
-	padding: 10px;
+	text-decoration: none;
+	margin: 2px 2px;
+	border-radius: 50px;
+	background: white;
+	color: black;
+	border: solid 1px #d4b8a8;
+}
+.flag:hover {
+	opacity: 0.7;
+}
+.nav-flag {
+	position: fixed;
+	left: -100px;
+	top: -100px;
+	z-index: 1;
 }
