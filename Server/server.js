@@ -38,45 +38,24 @@ app.get('/Content/Games/KIVIL', function (req, res) {
 
 
 // Resimleri uzantıları ile birlikte paylaş...
-app.get('/img/Instagram_Logo.png', function (req, res) {
-  res.sendFile('Instagram_Logo.png', { root: path.join(__dirname, '../img') });
+app.get('/img/Cinematic.jpg', function (req, res) {
+  res.sendFile('Cinematic.jpg', { root: path.join(__dirname, '../img') });
 })
-app.get('/img/Twitter_Logo.png', function (req, res) {
-  res.sendFile('Twitter_Logo.png', { root: path.join(__dirname, '../img') });
-})
-app.get('/img/DragonRenderHighPoly.png', function (req, res) {
-  res.sendFile('DragonRenderHighPoly.png', { root: path.join(__dirname, '../img') });
-})
-app.get('/img/RockyFountain.jpg', function (req, res) {
-  res.sendFile('RockyFountain.jpg', { root: path.join(__dirname, '../img') });
-})
-app.get('/img/DragonRender.png', function (req, res) {
-  res.sendFile('DragonRender.png', { root: path.join(__dirname, '../img') });
+app.get('/img/MetaLash.jpg', function (req, res) {
+  res.sendFile('MetaLash.jpg', { root: path.join(__dirname, '../img') });
 })
 app.get('/img/FaviconPixel.png', function (req, res) {
   res.sendFile('FaviconPixel.png', { root: path.join(__dirname, '../img') });
 })
-app.get('/img/MetaLash.jpeg', function (req, res) {
-  res.sendFile('MetaLash.jpeg', { root: path.join(__dirname, '../img') });
+app.get('/img/Dragon.jpg', function (req, res) {
+  res.sendFile('Dragon.jpg', { root: path.join(__dirname, '../img') });
 })
-app.get('/img/TheElderBloodFireWebSite.jpg', function (req, res) {
-  res.sendFile('TheElderBloodFireWebSite.jpg', { root: path.join(__dirname, '../img') });
+app.get('/img/RockyFountain.jpg', function (req, res) {
+  res.sendFile('RockyFountain.jpg', { root: path.join(__dirname, '../img') });
 })
-app.get('/img/Background.jpg', function (req, res) {
-  res.sendFile('Background.jpg', { root: path.join(__dirname, '../img') });
+app.get('/img/WaysofGodot.jpg', function (req, res) {
+  res.sendFile('WaysofGodot.jpg', { root: path.join(__dirname, '../img') });
 })
-app.get('/img/ParticleScene.jpg', function (req, res) {
-  res.sendFile('ParticleScene.jpg', { root: path.join(__dirname, '../img') });
-})
-app.get('/img/Cinematic.jpg', function (req, res) {
-  res.sendFile('Cinematic.jpg', { root: path.join(__dirname, '../img') });
-})
-
-app.get('/img/Circler.gif', function (req, res) {
-  res.sendFile('Circler.gif', { root: path.join(__dirname, '../img') });
-})
-
-
 
 // Yordamları uzantıları ile birlikte paylaş...
 app.get('/js/i18ner.js', function (req, res) {
