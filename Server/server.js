@@ -29,14 +29,6 @@ app.get('/Content/Artworks', function (req, res) {
   res.sendFile('Artworks.html', { root: path.join(__dirname, '../Content/') });
 })
 
-app.get('/Content/Games/Metalash', function (req, res) {
-  res.sendFile('Metalash.html', { root: path.join(__dirname, '../Content/Games/') });
-})
-app.get('/Content/Games/KIVIL', function (req, res) {
-  res.sendFile('KIVIL.html', { root: path.join(__dirname, '../Content/Games/') });
-})
-
-
 // Resimleri uzantıları ile birlikte paylaş...
 app.get('/img/Cinematic.jpg', function (req, res) {
   res.sendFile('Cinematic.jpg', { root: path.join(__dirname, '../img') });
