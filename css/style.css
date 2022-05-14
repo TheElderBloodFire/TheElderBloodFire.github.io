@@ -22,9 +22,3 @@ html, body {
 	font-size: x-large;
 	color: white;
 }
-a.navbar-item {
-	background-color: rgba(0, 0, 0, 0);
-}
-a.navbar-item:hover {
-	background-color: rgba(0, 0, 0, 0.1);
-}
